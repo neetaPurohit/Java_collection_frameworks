@@ -14,6 +14,13 @@ public class FinallyBlock {
 //            System.out.println("I'll run always");
 //        }
 
+     try {
+         System.out.println(a[8]);
+     }finally {
+         System.out.println("I'll run always");
+     }
 
+
+        System.out.println("bye");
     }
 }
