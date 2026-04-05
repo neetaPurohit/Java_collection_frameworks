@@ -9,6 +9,12 @@ public class Generics {
         System.out.println(d1.id);
         System.out.println(d2.id);
         System.out.println(d1.getId());
+
+
+        Cat<String,Integer> c1 = new Cat<>("meoww",11);
+        System.out.println(c1.getId());
+        System.out.println(c1.getName());
+
     }
 }
 //Generics in Java allow you to create classes, methods, and interfaces that can work with
@@ -25,4 +31,22 @@ class Dog<E>{
     E getId(){
         return id;
     }
+}
+
+class Cat<C,K>{
+    C name;
+    K id;
+
+    Cat(C name,K id){
+        this.name = name;
+        this.id = id;
+    }
+
+     K getId(){
+        return id;
+    }
+    C getName(){
+        return name;
+    }
+
 }
