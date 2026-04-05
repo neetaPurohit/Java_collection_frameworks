@@ -1,6 +1,6 @@
 package Java_Generics_Wrapper_Classes;
 
-public class Generics {
+public class GenericClass {
     static void main(String[] args) {
         //now we can make object and assign value in any data type
         Dog<String> d1 = new Dog<>("tommy");
@@ -20,7 +20,7 @@ public class Generics {
 //Generics in Java allow you to create classes, methods, and interfaces that can work with
 // any data type while ensuring type safety at compile time.
 
-
+//generic class
 class Dog<E>{
     E id;
 
@@ -48,5 +48,4 @@ class Cat<C,K>{
     C getName(){
         return name;
     }
-
 }
